@@ -1,0 +1,151 @@
+body {
+  font-family: sans;
+  color: #444;
+}
+
+.viz-container {
+  margin: 0 20px 0;
+}
+
+.viz-header {
+  margin-bottom: 20px;
+}
+
+.viz-header .user {
+  float: right;
+  background-color: lightsteelblue;
+}
+
+.viz-header .user h4 {
+  margin: 0;
+  padding: 8px;
+}
+
+.viz-titles {
+  margin-bottom: 20px;
+}
+
+.viz-titles h1 {
+  margin: 0;
+}
+
+.viz-titles h2 {
+  margin: 5px 0;
+}
+
+.viz-header .gray-bar {
+  background-color: #ddd;
+  padding: 5px;
+}
+
+.viz-body {
+  
+}
+
+.chart-body {
+  width: 50%;
+  float: left;
+}
+
+#chart {
+  width: 550px;
+  height: 425px;;
+}
+
+rect.bar {
+  fill: orange;
+}
+
+.x.axis .domain {
+  stroke: #ddd;
+}
+
+.x.axis .tick line{
+  opacity: 0;
+}
+
+.y.axis .tick line{
+  opacity: 0;
+}
+
+.red-line {
+  stroke: red;
+  stroke-width: 4;
+  stroke-dasharray: 6;
+}
+
+.green-line {
+  stroke: green;
+  stroke-width: 4;
+}
+
+.dark-blue-line {
+  stroke: darkblue;
+  stroke-width: 4;
+}
+
+.cyan-line {
+  stroke: cyan;
+  stroke-width: 4;
+}
+
+.viz-body .details {
+  float: right;
+  font-size: .8em;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: cyan;
+}
+.red {
+  color: red;
+}
+
+.top {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.top span {
+  width: 15%;
+  display: inline-block;
+}
+
+.bottom {
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 50px;
+}
+
+.bottom span {
+  width: 15%;
+  display: inline-block;
+}
+
+.footnote {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.table-body {
+  float: left;
+  margin-left: 20px;
+  width: 45%
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: .9em;
+}
+
+.table th, .table td {
+  width: 15%;
+  border-bottom: 2px solid #777;
+  padding: 10px;
+}

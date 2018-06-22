@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Service Availability</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/d3.js"></script>
+</head>
+<body>
+  <div class="viz-container">
+    <div class="viz-header">
+      <div class="user">
+        <h4>Owner: Product Operations</h4>
+      </div>    
+      <div class="viz-titles">
+        <div class="title">
+          <h1>Service Availability</h1>
+        </div>
+        <div class="subtitle">
+          <h2>Commerce Cloud</h2>
+        </div>
+      </div>
+      <div class="gray-bar">
+        <li>H1/18 Key Event: Go-live of Samsung in Moscow DC (pilot customer)</li>
+      </div>
+    </div>
+    <div class="viz-body">
+      <div class="chart-body">
+        <div class="details">
+          <div class="green">- Contractual SLA: 99.90</div>
+          <div class"black">- Availability Average H1/18: 99.93</div>
+          <div class="blue">- Internal Target: 99.95</div>
+          <div class="red"> -SAP Standard SLA: 99.50</div>
+        </div>    
+        <div class="chart-title">Monthly Availability</div>
+        <div id="chart"></div>
+        <div class="viz-footer">
+          <div class="top">
+              <span>January</span>
+              <span>February</span>
+              <span>March</span>
+              <span>April</span>
+              <span>May</span>
+              <span>June</span>
+          </div>
+          <div class="bar"><hr></div>
+          <div class="bottom">
+              <span>5.4%</span>
+              <span>7.8%</span>
+              <span>0.0%</span>
+              <span>81%</span>
+              <span>1.3%</span>
+              <span>0.0%</span>
+          </div>
+          <div class="footnote">
+            % of Relevant Tenants with SLO Breach
+          </div>
+        </div>
+      </div>
+      <div class="table-body">
+        <h4 class="table-title">Major H1 Unplanned Service Operations</h2>
+          <table class="table">
+            <tr>
+              <th>Date</th>
+              <th>Duration</th>
+              <th>Affected DCs/<br>Customers</th>
+              <th>Root Cause</th>
+              <th>Actions Taken</th>
+            </tr>
+            <tr>
+              <td>01/13</td>
+              <td>3 hours 23 minutes</td>
+              <td>ROT (SAP DC)</td>
+              <td>Network Issues</td>
+              <td>Storage network switch was rebooted</td>
+            </tr>
+            <tr>
+              <td>02/21</td>
+              <td>2 hours 10 minutes</td>
+              <td>Frankfurt (Legacy)</td>
+              <td>Accidental removal of IP</td>
+              <td>Rolled back the change</td>
+            </tr>
+            <tr>
+              <td>04/03</td>
+              <td>2 hours 14 minutes</td>
+              <td>Waltham (Legacy)</td>
+              <td>VM storage resource bug</td>
+              <td>Cnonfiguration corrected. Firmware updated.</td>
+            </tr>
+            <tr>
+              <td>04/23</td>
+              <td>1 hour 14 minutes</td>
+              <td>Frankfurt (Legacy)</td>
+              <td>Issue related to storage</td>
+              <td>Self-healed</td>
+            </tr>
+            <tr>
+              <td>04/27</td>
+              <td>3 hours</td>
+              <td>RWaltham (Legacy)</td>
+              <td>Automated attack</td>
+              <td>IP was blocked and server restart</td>
+            </tr>
+            <tr>
+              <td>05/15</td>
+              <td>1 hour 36 minutes</td>
+              <td>Moscow (SAP DC)</td>
+              <td>Host servers memory issues</td>
+              <td>Self-healed</td>
+            </tr>
+          </table>
+      </div>
+  
+    </div>
+      
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
